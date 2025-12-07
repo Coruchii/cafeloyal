@@ -1,9 +1,8 @@
-// Import the functions you need from the SDKs you need
+// --- BAGIAN INI JANGAN DIHAPUS ---
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore } from "firebase/firestore"; // <--- INI YG TADI HILANG/ERROR
+// ----------------------------------
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAN8uOgJqLanVbaA6HqLR462mm2Z996qaM",
   authDomain: "cafeloyal-lite.firebaseapp.com",
@@ -15,4 +14,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Initialize Firestore
 export const db = getFirestore(app);
